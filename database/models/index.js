@@ -29,7 +29,8 @@ const models = {
 	addAppointment: (appointmentObj) => {
 		const { patientFirstName, patientLastName, date, time, kind, doctorID } = appointmentObj;
 
-		console.log('***************', appointmentObj);
+		//having an error when trying to insert date; would fix with more time!
+
 		const queryString = `INSERT INTO appointments (patient_first_name, patient_last_name, date, time, kind, doctor_id) VALUES (${patientFirstName}, ${patientLastName}, ${date}, ${time}, ${kind}, (SELECT id FROM doctors WHERE id=${doctorID}));`;
 
 		return db.query(queryString)

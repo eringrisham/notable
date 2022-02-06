@@ -1,7 +1,5 @@
-//destructure models
 const { getAllDoctors, getAllAppointments, deleteAppointmentModel, addAppointment } = require('../../database/models');
 
-//controllers take in req and res
 const controllers = {
   getDoctors: (req, res) => {
 

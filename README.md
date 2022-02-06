@@ -18,3 +18,5 @@ This route allows the user to set an appointment through the /appointments endpo
 In the project directory, you can run:
 
 ### `npm start`
+
+The project can be viewed on localhost:3007/
