@@ -1,0 +1,19 @@
+{
+  "name": "notable",
+  "version": "1.0.0",
+  "description": "Backend Assessment",
+  "main": "index.js",
+  "repository": "https://github.com/eringrisham/notable.git",
+  "author": "<erinmgrisham@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.1",
+    "postgres": "^1.0.2"
+  },
+  "scripts": {
+    "db": "node database",
+    "start": "nodemon server"
+  }
+}
