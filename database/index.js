@@ -1,4 +1,4 @@
-const { Pool, Client } = require('pg')
+const { Pool } = require('pg')
 
 const pool = new Pool({
   user: '',
@@ -6,4 +6,6 @@ const pool = new Pool({
   database: 'notable',
   password: '',
   port: 5432,
-})
+});
+
+module.exports = pool;
